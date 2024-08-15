@@ -85,12 +85,8 @@ let subscriptions = [
   /////////////////////////////////////////////////////////////////
   
   
-  let cancelSubscriptions = function(array){
-    for (let i = 0; i < array.length; i+=2){
-        if (array[i].costPerMonth > 10){
-            array[i].cancel = true;
-        }
-    }
+  let cancelSubscriptions = function(){
+    
   };
   
   
@@ -106,11 +102,8 @@ let subscriptions = [
   /////////////////////////////////////////////////////////////////
   
   
-  let subscriptionList = function(array){
-   return array.reduce((acc, current) => {
-    acc += `${current.name} - ${current.costPerMonth}\n`;
-    return acc;
-   }, "")
+  let subscriptionList = function(){
+   
   };
   
   
@@ -120,15 +113,8 @@ let subscriptions = [
   // PROBLEM #3 ///////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   
-  let getSubscriptionObject = function(array, name){
-   if (array.length === 0){
-    return { name: null, costPerMonth: null };
-   }
-   if (array[0].name === name){
-    return { name: array[0].name, costPerMonth: array[0].costPerMonth };
-   }
-
-   return getSubscriptionObject(array.slice(1), name);
+  let getSubscriptionObject = function(){
+   
   };
   
   
@@ -139,11 +125,8 @@ let subscriptions = [
   
   
   
-  let updateSubscription = function(object, updates){
-    updates.forEach((arr) => {
-        object[arr[0]] = arr[1];
-    })
-    return object;
+  let updateSubscription = function(){
+    
   };
   
   
@@ -152,8 +135,8 @@ let subscriptions = [
   // PROBLEM #5 ///////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   
-  let getMultipleUsers = function(array){
-   return array.filter((sub) => sub.users.length > 1);
+  let getMultipleUsers = function(){
+   
   }; 
   
   
@@ -163,10 +146,8 @@ let subscriptions = [
   // PROBLEM #6 ///////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   
-  let getUsersArray = function(array){
-   return array.map((sub) => {
-    return { name: sub.name, users: sub.users };
-   })
+  let getUsersArray = function(){
+   
   };
   
   
