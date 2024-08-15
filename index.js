@@ -85,8 +85,17 @@ let subscriptions = [
   /////////////////////////////////////////////////////////////////
   
   
-  let cancelSubscriptions = function(){
-    
+  let cancelSubscriptions = function(array){
+    // Iterate through array incrementing by 2 each loop and starting a 0
+    for (let i = 0; i < array.length; i += 2) {
+      // Check if array[i].costPerMonth > 10
+      if (array[i].costPerMonth > 10) {
+        // Reassign array[i].cancel to true
+        array[i].cancel = true;
+      }
+    }
+    // Return array
+    return array;
   };
   
   
@@ -103,7 +112,7 @@ let subscriptions = [
   
   
   let subscriptionList = function(){
-   
+    
   };
   
   
